@@ -1,0 +1,49 @@
+Metadata for EPA NLA dataset used in Maranger et al. "Stoichiometry of carbon, nitrogen, and phosphorus through the freshwater pipe" 
+
+The 2007 EPA NLA data was downloaded from their data distribution website (http://www.epa.gov/national-aquatic-resource-surveys/data-national-aquatic-resource-surveys) on 2015-05-15. 
+We used information from both the Water Quality and Sampled Lake Information data files. We filtered second visits to sites (resulted in N=1157) and used the TOC, PTL, and NTL data 
+fields to generate molar stoichiometric ratios. We used the LAKE_ORIGIN field in the Sampled Lake Information data file to distinguish between reservoirs (“MAN-MADE”) and lakes (“NATURAL”). 
+We also used the REF_NUTR field to distinguish between reference and non-reference water quality sites.
+
+
+Limnology & Oceanography Letters metadata tables
+
+Table 1. Creation of your dataset.
+Title of dataset:	U.S. Environmental Protection Agency National Lake Assessment 2007
+URL of dataset:	https://github.com/joneslabND/CNPfreshwaterpipes
+Abstract:	The study explores the stoichiometric ratios of total organic carbon, total nitrogen, and total phosphorus for lakes and reservoirs across the continental United States.
+Keywords:	stoichiometry, lake, reservoir
+Dataset lead author: 	Stuart E. Jones
+
+Position of data author:	Associate Professor
+Address of data author:	264 Galvin Life Sciences, Notre Dame, IN  46556
+Email address of data author:	sjones20@nd.edu
+Primary contact person for dataset:	Stuart E. Jones
+Position of primary contact person:	Associate Professor
+Address of primary contact person:	264 Galvin Life Sciences, Notre Dame, IN  46556
+Email address of primary contact person:	sjones20@nd.edu
+Organization associated with the data:	U.S. Environmental Protection Agency
+Usage Rights:	publicly available and free to use
+Geographic region:	Continental United States
+Geographic coverage: 	Continental United States
+Temporal coverage - Begin date:	January 1, 2007
+Temporal coverage - End date:	December 31, 2007
+General study design:	See the EPA’s description at:  https://www.epa.gov/national-aquatic-resource-surveys/what-national-lakes-assessment#tabs-2
+
+Methods description:	See the EPA’s description at:  https://www.epa.gov/national-aquatic-resource-surveys/manuals-used-national-aquatic-resource-surveys#National Lakes Assessment
+Laboratory, field, or other analytical methods:	See the EPA’s description at:  https://www.epa.gov/national-aquatic-resource-surveys/manuals-used-national-aquatic-resource-surveys#National Lakes Assessment
+	
+Quality control:	https://www.epa.gov/national-aquatic-resource-surveys/manuals-used-national-aquatic-resource-surveys#National Lakes Assessment
+Additional information:	NA
+
+Table 2. Description of the variables in the dataset 
+Column name		Definition																			Units
+SITE_ID			ID assigned to each site															NA
+TOC				Total Organic Carbon																mg/L
+PTL				Total Phosphorus																	μg/L
+NTL				Total Nitrogen																		μg/L
+AREA_HA			Lake polygon area (hectares) from NHD												ha
+LAKE_ORIGIN		Lake origin (MAN-MADE, NATURAL [which includes natural lakes augmented by dams])	NA
+REF_NUTR		Nutrient Least Disturbed Reference Site (Y/N)										NA
+
+ 

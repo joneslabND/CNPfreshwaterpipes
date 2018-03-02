@@ -1,0 +1,62 @@
+Metadata for NWIS stream dataset used in Maranger et al. "Stoichiometry of carbon, nitrogen, and phosphorus through the freshwater pipe" 
+
+We chose to gather data collected over the last ten years (2017-01-01 to 2017-11-30) for all U.S. streams that had at least one measurement of total organic carbon, total nitrogen, and total phosphorus over that period. 
+When available we also collected stream discharge data, but this was not required for use in the stoichiometry comparisons. Metadata describing various chemical measurements made available in NWIS are known to be 
+redundant and at times difficult to deconvolute (Sprague et al. 2017). For this reason we chose to extract a single parameter code per element (C, N, and P). 
+We used the parameter code descriptions available at https://nwis.waterdata.usgs.gov/usa/nwis/pmcodes to select parameter codes. Our criteria for parameter code selection were:
+-a sample source of “water”
+-a filtration status of “unfiltered”
+-a chemical form of “elemental”
+-a clear designation of units
+Based on these criteria, we selected the following parameter codes an associated descriptions:
+Parameter Code	Group Name			Description																							SRSName															Parameter Unit
+00600			Nutrient			Total nitrogen [nitrate + nitrite + ammonia + organic-N], water, unfiltered, milligrams per liter	Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)	mg/l
+00665			Nutrient			Phosphorus, water, unfiltered, milligrams per liter as phosphorus									Phosphorus														mg/l as P
+00680			Organics, other		Organic carbon, water, unfiltered, milligrams per liter												Organic carbon													mg/l
+00060			Physical			Discharge, cubic feet per second																	Stream flow, mean. Daily										ft3/s
+
+All observations for a given parameter from a given site were averaged. Sites generating a NA or value equal to or below zero were filtered from the resulting data set (N=17), 
+and the remaining site averages were used to calculate molar stoichiometric ratios at each site. We were able to collect stoichiometric ratios from 7275 sites. 
+Each state had at least one site, except the District of Columbia. Discharge was available at 33% of these sites and varied from 1.4e-4 to 1.6e4 m3 s-1 (N=2409).
+
+
+Limnology & Oceanography Letters metadata tables
+
+Table 1. Creation of your dataset.
+Title of dataset:	U.S. Geological Survey National Water Information System
+URL of dataset:	https://github.com/joneslabND/CNPfreshwaterpipes
+Abstract:	The study explores the stoichiometric ratios of total organic carbon, total nitrogen, and total phosphorus for streams and rivers across the United States.
+Keywords:	stoichiometry, stream, river
+Dataset lead author: 	Stuart E. Jones
+
+Position of data author:	Associate Professor
+Address of data author:	264 Galvin Life Sciences, Notre Dame, IN  46556
+Email address of data author:	sjones20@nd.edu
+Primary contact person for dataset:	Stuart E. Jones
+Position of primary contact person:	Associate Professor
+Address of primary contact person:	264 Galvin Life Sciences, Notre Dame, IN  46556
+Email address of primary contact person:	sjones20@nd.edu
+Organization associated with the data:	U.S. Geological Survey
+Usage Rights:	publicly available and free to use
+Geographic region:	United States
+Geographic coverage: 	United States
+Temporal coverage - Begin date:	January 1, 2007
+Temporal coverage - End date:	December 31, 2017
+General study design:	Stream water chemistry monitoring maintained at U.S. Geological Survey stream and river sites across the United States.
+
+Methods description:	Methods detailed by U.S. Geological Survey here:  https://help.waterdata.usgs.gov/codes-and-parameters
+
+Laboratory, field, or other analytical methods:	Methods detailed by U.S. Geological Survey here:  https://help.waterdata.usgs.gov/codes-and-parameters
+
+	
+Quality control	Methods: detailed by U.S. Geological Survey here:  https://help.waterdata.usgs.gov/codes-and-parameters
+
+Additional information:	NA
+
+Table 2. Description of the variables in the dataset 
+Column name		Definition																				Units
+P_mgL			Mean of all observations for a given site stored in NWIS under parameter code 00665		mg/L
+C_mgL			Mean of all observations for a given site stored in NWIS under parameter code 00680		mg/L
+N_mgL			Mean of all observations for a given site stored in NWIS under parameter code 00600		mg/L
+Q_ft3S			Mean of all observations for a given site stored in NWIS under parameter code 00060		ft3/s
+ 
